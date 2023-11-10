@@ -8,6 +8,7 @@ defmodule ConstraintOrderExample.Application do
   @impl true
   def start(_type, _args) do
     children = [
+      ConstraintOrderExample.Repo
       # Starts a worker by calling: ConstraintOrderExample.Worker.start_link(arg)
       # {ConstraintOrderExample.Worker, arg}
     ]
